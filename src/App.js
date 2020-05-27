@@ -17,9 +17,9 @@ class App extends React.Component {
           <Navbar />
 
           <Switch className="main">
-            <Route exact path="/" component={Home} />
-            <Route path="/browse-movies" component={BrowseMovies} />
-            <Route path="/movie/:id/:slug" component={MovieDetails} />
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+            <Route path={process.env.PUBLIC_URL + "/browse-movies"} component={BrowseMovies} />
+            <Route path={process.env.PUBLIC_URL + "/movie/:id/:slug"} component={MovieDetails} />
           </Switch>
           <Footer />
         </div>
