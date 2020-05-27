@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yts-movie-app/static/css/main.735c3055.chunk.css",
-    "main.js": "/yts-movie-app/static/js/main.1fee1c2a.chunk.js",
-    "main.js.map": "/yts-movie-app/static/js/main.1fee1c2a.chunk.js.map",
+    "main.js": "/yts-movie-app/static/js/main.edc9e0da.chunk.js",
+    "main.js.map": "/yts-movie-app/static/js/main.edc9e0da.chunk.js.map",
     "runtime~main.js": "/yts-movie-app/static/js/runtime~main.1fcc84eb.js",
     "runtime~main.js.map": "/yts-movie-app/static/js/runtime~main.1fcc84eb.js.map",
     "static/js/2.810d2398.chunk.js": "/yts-movie-app/static/js/2.810d2398.chunk.js",
     "static/js/2.810d2398.chunk.js.map": "/yts-movie-app/static/js/2.810d2398.chunk.js.map",
     "index.html": "/yts-movie-app/index.html",
-    "precache-manifest.57bba6c131668373f5387a7637aaa879.js": "/yts-movie-app/precache-manifest.57bba6c131668373f5387a7637aaa879.js",
+    "precache-manifest.ac55bea7dd6b49e05f588da07971a495.js": "/yts-movie-app/precache-manifest.ac55bea7dd6b49e05f588da07971a495.js",
     "service-worker.js": "/yts-movie-app/service-worker.js",
     "static/css/main.735c3055.chunk.css.map": "/yts-movie-app/static/css/main.735c3055.chunk.css.map",
     "static/media/loading.css": "/yts-movie-app/static/media/25.202ea67c.svg",
