@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e238725eadea0e611b434f2720001bcd",
+    "revision": "54f32efeb352dc7ca01b838268bf1a61",
     "url": "/yts-movie-app/index.html"
   },
   {
-    "revision": "5e2aff098edd1e8617bc",
+    "revision": "335d819b2dbc944e7fb4",
     "url": "/yts-movie-app/static/css/main.735c3055.chunk.css"
   },
   {
-    "revision": "5c1574d60528abe2c825",
-    "url": "/yts-movie-app/static/js/2.3d49eb6e.chunk.js"
+    "revision": "c5f22aae9c5f9647e770",
+    "url": "/yts-movie-app/static/js/2.c0137343.chunk.js"
   },
   {
-    "revision": "5e2aff098edd1e8617bc",
-    "url": "/yts-movie-app/static/js/main.722ed2d0.chunk.js"
+    "revision": "335d819b2dbc944e7fb4",
+    "url": "/yts-movie-app/static/js/main.a7f6c81b.chunk.js"
   },
   {
     "revision": "e2eefa1d2e20433693ee",
