@@ -10,7 +10,7 @@ const PopularMovies = (props) => {
       return (
         <div className="browse-movie-wrap" key={movie.id}>
           <div className="browse-movie-link">
-            <a href={process.env.PUBLIC_URL + '/movie/' + movie.id + '/' + movie.slug}>
+            <a href={'/movie/' + movie.id + '/' + movie.slug}>
               <img src={movie.medium_cover_image} alt={movie.title}></img>
               <div className="overlay">
                 <div className="star-icon">
@@ -24,7 +24,7 @@ const PopularMovies = (props) => {
             </a>
           </div>
           <div className="browse-movie-bottom">
-            <a href={process.env.PUBLIC_URL + '/movie/' + movie.id + '/' + movie.slug}>{movie.title}</a>
+            <a href={'/movie/' + movie.id + '/' + movie.slug}>{movie.title}</a>
             <div className='movie-year'>{movie.year}</div>
           </div>
         </div>

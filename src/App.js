@@ -16,10 +16,10 @@ class App extends React.Component {
         <div className="App">
           <Navbar />
 
-          <Switch>
-            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-            <Route path={process.env.PUBLIC_URL + '/browse-movies'} component={BrowseMovies} />
-            <Route path={process.env.PUBLIC_URL + '/movie/:id/:slug'} component={MovieDetails} />
+          <Switch className="main">
+            <Route exact path="/" component={Home} />
+            <Route exact path="/browse-movies" component={BrowseMovies} />
+            <Route exact path="/movie/:id/:slug" component={MovieDetails} />
           </Switch>
           <Footer />
         </div>
