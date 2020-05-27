@@ -11,7 +11,7 @@ const MoviesCollection = (props) => {
       return (
         <div className="browse-movie-wrap" key={movie.id}>
           <div className="browse-movie-link">
-            <a href={'/movie/' + movie.id + '/' + movie.slug}>
+            <a href={process.env.PUBLIC_URL + '/movie/' + movie.id + '/' + movie.slug}>
               <img src={movie.medium_cover_image === null ? ('https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg') : (movie.medium_cover_image)} alt={movie.title}></img>
               <div className="overlay">
                 <div className="star-icon">
@@ -25,7 +25,7 @@ const MoviesCollection = (props) => {
             </a>
           </div>
           <div className="browse-movie-bottom">
-            <a href={'/movie/' + movie.id + '/' + movie.slug}>{movie.title}</a>
+            <a href={process.env.PUBLIC_URL + '/movie/' + movie.id + '/' + movie.slug}>{movie.title}</a>
             <div className='movie-year'>{movie.year}</div>
           </div>
         </div>
