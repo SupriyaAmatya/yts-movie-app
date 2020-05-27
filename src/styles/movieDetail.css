@@ -1,0 +1,476 @@
+.movie-detail-container{
+    padding-top: 60px;
+}
+
+.hidden-movie-title{
+    display: none;
+    z-index: 3;
+    position: relative;
+    color: #fff;
+}
+.hidden-movie-title h1{
+    margin-left: 65px;
+    font-size: 38px;
+}
+
+.background-image{
+    /* background: url(../assets/background.jpg) no-repeat center center; */
+    z-index: 1;
+    display: block;
+    background-size: cover!important;
+}
+
+.background-image,
+.background-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 60px;
+    height: 600px;
+}
+
+.background-overlay{
+    z-index: 2;
+    background: linear-gradient(180deg,rgba(29, 29, 29, 0.507) 0,#1d1d1d);
+}
+
+.movie-container,
+.summary-section{
+    position: relative;
+    z-index: 3;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.movie-container .movie-poster{
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-container{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container .card{
+    width: 100%;
+}
+
+.card .image-container{
+    display: block;
+    border: 6px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .image{
+    width: 100%;
+    display: block;
+}
+
+.movie-poster .download-btn{
+    width: 100%;
+    background-color: #75c74e;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.movie-poster .download-btn:hover{
+    background-color: #59a336;
+}
+
+.movie-info{
+    width: 40%;
+    margin-left: 5%;
+    color: #fff;
+    float: left;
+}
+
+.movie-info h1{
+    margin-top: 0;
+    font-size: 38px;
+}
+.movie-info h2{
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.movie-info .torrent-quality{
+    margin-top: 55px;
+}
+
+.torrent-quality div{
+    margin-top: 10px;
+}
+
+.torrent-quality .download-torrent{
+    background: rgba(27,27,35,.4);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ffffff29;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 8px;
+    transition: color .15s ease-in-out;
+    cursor: pointer;
+}
+.torrent-quality .download-torrent span{
+    text-transform: capitalize;
+}
+
+.torrent-quality .download-torrent:hover{
+    color: #919191;
+}
+
+.movie-info .imdb{
+    display: flex;
+    width: 90px;
+    border: 1px solid #ffffff29;
+    background: rgba(27,27,35,.4);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+
+.movie-info .imdb span{
+    position: relative;
+    top: 15px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-size: 700;
+}
+
+.movie-title li{
+    float: left;
+    padding-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.similar-movies-container{
+    width: 30%;
+}
+
+.similar-movies-container p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 9px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.similar-movies-container .similar-movie{
+    width: 35%;
+    padding: 2px 9px;
+    float: left
+}
+
+.card .image-link{
+    display: block;
+    border-radius: .3rem;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #fff;
+}
+.card .image-link:hover{
+    border: 3px solid #75c74e;
+}
+
+.screenshots-section{
+    position: relative;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+.summary-section{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 0 15px;
+    z-index: 2;
+}
+
+.summary-section .movie-summary{
+    width: 55%;
+    float: left;
+}
+
+.summary-section .movie-cast{
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 50px;
+    float: right;
+}
+
+.movie-summary h3{
+    margin:0;
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.movie-summary p{
+    width: 100%;
+    line-height: 1.3em;
+    padding: 25px 0;
+}
+
+.movie-summary div{
+    font-style: italic;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+}
+
+.movie-cast h3{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.movie-cast ul li{
+    color: #fff;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+    /* padding-bottom: 2px; */
+    padding-top: 8px;
+}
+
+.movie-cast ul li img{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.movie-cast ul li span {
+    color: #919191;
+}
+
+.movie-cast ul p{
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+
+/* -------------DOWNLOAD MODAL----------------- */
+.download-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.863);
+    z-index: 20;
+    overflow-y: auto;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.download-modal .modal-container{
+    position: relative;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 90%;
+    background: rgb(255, 255, 255);
+    margin: 90px auto;
+    padding: 10px;
+    cursor: auto;
+}
+
+.modal-title{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #59a336;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.modal-close:hover{
+    color: #333;
+}
+
+.modal-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.modal-torrent{
+    width: 30%;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    text-align: center;
+    padding: 8px 0;
+    margin-top: 30px;
+    /* display: inline-block; */
+}
+
+.modal-torrent .modal-quality{
+    padding: 20px;
+    max-width: 80px;
+    margin: 0 auto;
+    border: 2px solid rgb(138, 138, 138);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.modal-torrent .quality{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modal-torrent .file-size{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d1d1d;
+    text-transform: uppercase;
+}
+
+.modal-torrent a{
+    background-color: #6ac042;
+    padding: 8px 12px;
+    border-radius:4px ;
+    cursor: pointer;
+    transition: all .5s ;
+}
+    
+
+
+/* -------------------------------MEDIA QUERIES---------------------------- */
+@media only screen and (max-width: 1024px){
+    .movie-container .movie-poster{
+        width: 40%;
+    }
+
+    .movie-container .movie-info{
+        margin-left: -10%;
+        width: 40%;
+    }
+    .similar-movies-container{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .movie-info h1{
+        display: none;
+    }
+
+    .movie-info h2{
+        margin-top: 15px;
+    }
+
+    .hidden-movie-title{
+        display: block;
+    }
+
+    .screenshots-section{
+    display: block;
+    margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    
+
+    .hidden-movie-title h1{
+        margin-left:50px;
+        font-size: 30px;
+    }
+    
+    .movie-info .imdb{
+        margin-top: 20px;
+    }
+
+    .screenshots-section .pic{
+        display: none;
+    }
+
+    .summary-section .movie-summary{
+        width: 100%;
+        float: none;
+    }
+
+    .summary-section .movie-cast{
+        width: 80%;
+        margin-left: 0;
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 460px){
+    .movie-container{
+        display: block;
+    }
+    .hidden-movie-title h1{
+        margin-top: 0;
+        margin-left:30px;
+    }
+    .movie-container .movie-poster{
+        width: 60%;
+        float: none;
+        margin-left: 15px;
+        margin-right: auto;
+    }
+
+    .movie-container .movie-info{
+        margin-left:30px;
+        width: 90%;
+        float: none;
+    }
+    .movie-info h2, .movie-info .genre-list li{
+        font-size: 16px;
+    }
+
+    .movie-info .genre-list{
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+
+    .movie-info .torrent-quality{
+        padding-top: 10px;
+    }
+    .screenshots-section{
+        margin-left: 15px;
+    }
+}

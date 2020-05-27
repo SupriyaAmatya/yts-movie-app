@@ -1,0 +1,132 @@
+.browse-movies-section{
+    width: 100%;
+    position: relative;
+}
+
+.main-search{
+    position: relative;
+    width: 100%;
+    background: url(../assets/background.jpg) ;
+    background-size: cover;
+    background-color: #171717;
+    padding: 30px 0;
+    height: 250px;
+    z-index: 2;
+}
+
+.search-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #17171796;
+}
+
+.search-form{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 10px ;
+    margin-top: 20px;
+}
+
+.search-field{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:80%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.search-field p{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    /* color: #fff; */
+}
+
+.search-field input[type=text]{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    border-radius: 4px;
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #fff;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search-btn{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.search-btn input{
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #6ac045;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    padding:14px;
+    max-width: 100px;
+    cursor: pointer;
+}
+.search-btn button:hover{
+    background-color: #52a52f;
+}
+
+.movies-list{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.movie-count{
+    margin: 50px 0;
+    color: #52a52f;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* --------------------PAGINATION------------------------- */
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.hidden-pagination{
+    display: none;
+}
+
+.pagination li{
+    /* background-color: #171717; */
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 10px;
+    
+    transition: all .3s;
+}
+
+.pagination li a{
+    padding: 10px;
+}
+
+.pagination .active-page,
+.pagination li:hover{
+    background-color: #52a52f;
+}
+
+
