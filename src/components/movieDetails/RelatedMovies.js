@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
 const RelatedMovies = (props) => {
-
   const { similarMovies } = props;
 
   const similarMoviesList = similarMovies ? (
@@ -9,14 +10,15 @@ const RelatedMovies = (props) => {
       return(
         <div className="card-container similar-movie" key={movie.id}>
         <div className="card">
-          <a href={'/movie/' + movie.id + '/' + movie.slug} className="image-link" title={movie.title_long}>
+          <Link to={'/movie/' + movie.id + '/' + movie.slug} className="image-link" title={movie.title_long}>
             <img src={movie.medium_cover_image} alt={movie.title} className="image"/>
-          </a>
+          </Link>
         </div>
       </div>
       )
     })
   ) : null
+  
   return (
     <div className="similar-movies-container clearfix">
       <p>Similar Movies</p>
@@ -25,4 +27,4 @@ const RelatedMovies = (props) => {
   )
 }
 
-export default RelatedMovies
+export default withRouter(RelatedMovies)

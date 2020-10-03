@@ -5,7 +5,6 @@ import defaultProfile from '../../assets/default_profile.jpg'
 const Summary = (props) => {
 
   const { movie } = props;
-  // console.log(movie);
 
   const castList = movie.cast ? (
     movie.cast.map((cast, index) => {

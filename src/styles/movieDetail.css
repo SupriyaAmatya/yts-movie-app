@@ -1,27 +1,26 @@
-.movie-detail-container{
+.movie-detail-container {
     padding-top: 60px;
 }
 
-.hidden-movie-title{
+.hidden-movie-title {
     display: none;
     z-index: 3;
     position: relative;
     color: #fff;
 }
-.hidden-movie-title h1{
+
+.hidden-movie-title h1 {
     margin-left: 65px;
     font-size: 38px;
 }
 
-.background-image{
-    /* background: url(../assets/background.jpg) no-repeat center center; */
+.background-image {
     z-index: 1;
     display: block;
     background-size: cover!important;
 }
 
-.background-image,
-.background-overlay{
+.background-image, .background-overlay {
     position: absolute;
     left: 0;
     right: 0;
@@ -30,20 +29,19 @@
     height: 600px;
 }
 
-.background-overlay{
+.background-overlay {
     z-index: 2;
-    background: linear-gradient(180deg,rgba(29, 29, 29, 0.507) 0,#1d1d1d);
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0.507) 0, #1d1d1d);
 }
 
-.movie-container,
-.summary-section{
+.movie-container, .summary-section {
     position: relative;
     z-index: 3;
     flex-wrap: nowrap;
     align-items: stretch;
 }
 
-.movie-container .movie-poster{
+.movie-container .movie-poster {
     width: 25%;
     float: left;
     position: relative;
@@ -51,31 +49,32 @@
     padding-right: 15px;
 }
 
-.card-container{
+.card-container {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card-container .card{
+.card-container .card {
     width: 100%;
 }
 
-.card .image-container{
+.card .image-container {
     display: block;
     border: 6px solid #fff;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    min-height: 300px;
 }
 
-.card .image{
+.card .image {
     width: 100%;
     display: block;
 }
 
-.movie-poster .download-btn{
+.movie-poster .download-btn {
     width: 100%;
     background-color: #75c74e;
     color: #fff;
@@ -90,37 +89,38 @@
     cursor: pointer;
 }
 
-.movie-poster .download-btn:hover{
+.movie-poster .download-btn:hover {
     background-color: #59a336;
 }
 
-.movie-info{
+.movie-info {
     width: 40%;
     margin-left: 5%;
     color: #fff;
     float: left;
 }
 
-.movie-info h1{
+.movie-info h1 {
     margin-top: 0;
     font-size: 38px;
 }
-.movie-info h2{
+
+.movie-info h2 {
     margin: 0;
     font-size: 20px;
     line-height: 1.5em;
 }
 
-.movie-info .torrent-quality{
+.movie-info .torrent-quality {
     margin-top: 55px;
 }
 
-.torrent-quality div{
+.torrent-quality div {
     margin-top: 10px;
 }
 
-.torrent-quality .download-torrent{
-    background: rgba(27,27,35,.4);
+.torrent-quality .download-torrent {
+    background: rgba(27, 27, 35, .4);
     padding: 5px 10px;
     border-radius: 3px;
     border: 1px solid #ffffff29;
@@ -132,25 +132,26 @@
     transition: color .15s ease-in-out;
     cursor: pointer;
 }
-.torrent-quality .download-torrent span{
+
+.torrent-quality .download-torrent span {
     text-transform: capitalize;
 }
 
-.torrent-quality .download-torrent:hover{
+.torrent-quality .download-torrent:hover {
     color: #919191;
 }
 
-.movie-info .imdb{
+.movie-info .imdb {
     display: flex;
     width: 90px;
     border: 1px solid #ffffff29;
-    background: rgba(27,27,35,.4);
+    background: rgba(27, 27, 35, .4);
     border-radius: 5px;
     padding: 0 10px;
     margin-top: 40px;
 }
 
-.movie-info .imdb span{
+.movie-info .imdb span {
     position: relative;
     top: 15px;
     margin-left: 10px;
@@ -158,19 +159,18 @@
     font-size: 700;
 }
 
-.movie-title li{
+.movie-title li {
     float: left;
     padding-right: 5px;
     font-size: 18px;
     font-weight: 500;
 }
 
-
-.similar-movies-container{
+.similar-movies-container {
     width: 30%;
 }
 
-.similar-movies-container p{
+.similar-movies-container p {
     margin-top: 0;
     margin-bottom: 10px;
     padding-left: 9px;
@@ -179,82 +179,83 @@
     font-weight: 600;
 }
 
-.similar-movies-container .similar-movie{
+.similar-movies-container .similar-movie {
     width: 35%;
     padding: 2px 9px;
     float: left
 }
 
-.card .image-link{
+.card .image-link {
     display: block;
     border-radius: .3rem;
     overflow: hidden;
     position: relative;
     border: 3px solid #fff;
 }
-.card .image-link:hover{
+
+.card .image-link:hover {
     border: 3px solid #75c74e;
 }
 
-.screenshots-section{
+.screenshots-section {
     position: relative;
     margin-top: 50px;
     z-index: 2;
 }
 
-.summary-section{
+.summary-section {
     margin-top: 50px;
     margin-bottom: 40px;
     padding: 0 15px;
     z-index: 2;
 }
 
-.summary-section .movie-summary{
+.summary-section .movie-summary {
     width: 55%;
     float: left;
 }
 
-.summary-section .movie-cast{
+.summary-section .movie-cast {
     width: 40%;
     margin-left: 5%;
     margin-top: 50px;
     float: right;
 }
 
-.movie-summary h3{
-    margin:0;
+.movie-summary h3 {
+    margin: 0;
     color: #fff;
     font-size: 18px;
     font-style: italic;
 }
 
-.movie-summary p{
+.movie-summary p {
     width: 100%;
     line-height: 1.3em;
     padding: 25px 0;
 }
 
-.movie-summary div{
+.movie-summary div {
     font-style: italic;
     line-height: 1.3em;
     margin-bottom: 10px;
 }
 
-.movie-cast h3{
+.movie-cast h3 {
     color: #fff;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 20px;
 }
-.movie-cast ul li{
+
+.movie-cast ul li {
     color: #fff;
     display: flex;
     border-bottom: 1px solid rgba(255, 255, 255, 0.178);
-    /* padding-bottom: 2px; */
     padding-top: 8px;
 }
 
-.movie-cast ul li img{
+.movie-cast ul li img {
     border-radius: 100%;
     width: 45px;
     height: 45px;
@@ -266,15 +267,15 @@
     color: #919191;
 }
 
-.movie-cast ul p{
+.movie-cast ul p {
     font-size: 15px;
     margin-top: 8px;
     margin-left: 10px;
 }
 
-
 /* -------------DOWNLOAD MODAL----------------- */
-.download-modal{
+
+.download-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -288,12 +289,12 @@
     opacity: 0;
 }
 
-.modal-active{
+.modal-active {
     visibility: visible;
     opacity: 1;
 }
 
-.download-modal .modal-container{
+.download-modal .modal-container {
     position: relative;
     border-radius: 5px;
     max-width: 600px;
@@ -304,14 +305,14 @@
     cursor: auto;
 }
 
-.modal-title{
+.modal-title {
     text-align: center;
     padding-top: 30px;
     font-size: 14px;
     color: #59a336;
 }
 
-.modal-close{
+.modal-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -320,11 +321,12 @@
     font-weight: 700;
     cursor: pointer;
 }
-.modal-close:hover{
+
+.modal-close:hover {
     color: #333;
 }
 
-.modal-content{
+.modal-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -332,7 +334,7 @@
     padding-bottom: 15px;
 }
 
-.modal-torrent{
+.modal-torrent {
     width: 30%;
     border-bottom: 1px solid rgb(201, 201, 201);
     text-align: center;
@@ -341,7 +343,7 @@
     /* display: inline-block; */
 }
 
-.modal-torrent .modal-quality{
+.modal-torrent .modal-quality {
     padding: 20px;
     max-width: 80px;
     margin: 0 auto;
@@ -350,7 +352,7 @@
     font-weight: 700;
 }
 
-.modal-torrent .quality{
+.modal-torrent .quality {
     font-size: 18px;
     font-weight: 700;
     color: #1d1d1d;
@@ -358,119 +360,104 @@
     padding-bottom: 10px;
 }
 
-.modal-torrent .file-size{
+.modal-torrent .file-size {
     font-size: 18px;
     font-weight: 700;
     color: #1d1d1d;
     text-transform: uppercase;
 }
 
-.modal-torrent a{
+.modal-torrent a {
     background-color: #6ac042;
     padding: 8px 12px;
-    border-radius:4px ;
+    border-radius: 4px;
     cursor: pointer;
-    transition: all .5s ;
+    transition: all .5s;
 }
-    
-
 
 /* -------------------------------MEDIA QUERIES---------------------------- */
-@media only screen and (max-width: 1024px){
-    .movie-container .movie-poster{
+
+@media only screen and (max-width: 1024px) {
+    .movie-container .movie-poster {
         width: 40%;
     }
-
-    .movie-container .movie-info{
+    .movie-container .movie-info {
         margin-left: -10%;
         width: 40%;
     }
-    .similar-movies-container{
+    .similar-movies-container {
         display: none;
     }
 }
 
-@media only screen and (max-width: 768px){
-    .movie-info h1{
+@media only screen and (max-width: 768px) {
+    .movie-info h1 {
         display: none;
     }
-
-    .movie-info h2{
+    .movie-info h2 {
         margin-top: 15px;
     }
-
-    .hidden-movie-title{
+    .hidden-movie-title {
         display: block;
     }
-
-    .screenshots-section{
-    display: block;
-    margin-left: 60px;
+    .screenshots-section {
+        display: block;
+        margin-left: 60px;
     }
 }
 
-@media only screen and (max-width: 650px){
-    
-
-    .hidden-movie-title h1{
-        margin-left:50px;
+@media only screen and (max-width: 650px) {
+    .hidden-movie-title h1 {
+        margin-left: 50px;
         font-size: 30px;
     }
-    
-    .movie-info .imdb{
+    .movie-info .imdb {
         margin-top: 20px;
     }
-
-    .screenshots-section .pic{
+    .screenshots-section .pic {
         display: none;
     }
-
-    .summary-section .movie-summary{
+    .summary-section .movie-summary {
         width: 100%;
         float: none;
     }
-
-    .summary-section .movie-cast{
+    .summary-section .movie-cast {
         width: 80%;
         margin-left: 0;
         float: none;
     }
-
 }
 
-@media only screen and (max-width: 460px){
-    .movie-container{
+@media only screen and (max-width: 460px) {
+    .movie-container {
         display: block;
     }
-    .hidden-movie-title h1{
+    .hidden-movie-title h1 {
         margin-top: 0;
-        margin-left:30px;
+        margin-left: 30px;
     }
-    .movie-container .movie-poster{
+    .movie-container .movie-poster {
         width: 60%;
         float: none;
         margin-left: 15px;
         margin-right: auto;
     }
-
-    .movie-container .movie-info{
-        margin-left:30px;
+    .movie-container .movie-info {
+        margin-left: 30px;
         width: 90%;
         float: none;
     }
-    .movie-info h2, .movie-info .genre-list li{
+    .movie-info h2, .movie-info .genre-list li {
         font-size: 16px;
     }
-
-    .movie-info .genre-list{
+    .movie-info .genre-list {
         margin-top: 8px;
         margin-bottom: 15px;
     }
-
-    .movie-info .torrent-quality{
+    .movie-info .torrent-quality {
         padding-top: 10px;
     }
-    .screenshots-section{
+    .screenshots-section {
         margin-left: 15px;
     }
 }

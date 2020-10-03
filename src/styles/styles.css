@@ -1,10 +1,10 @@
-.container{
+.container {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.navbar-wrapper{
+.navbar-wrapper {
     width: 100%;
     height: 60px;
     background-color: #1D1D1D;
@@ -17,21 +17,21 @@
     display: block;
 }
 
-.nav-logo a{
+.nav-logo a {
     float: left;
     height: inherit;
 }
 
-.nav-logo a img{
+.nav-logo a img {
     margin: 14px 30px 0 15px;
 }
 
-.navbar-wrapper .main-nav-links{
+.navbar-wrapper .main-nav-links {
     float: right;
     margin-right: 15px;
 }
 
-.quick-search{
+.quick-search {
     float: left;
     margin-top: 10px;
 }
@@ -41,7 +41,7 @@
     margin-right: 10px;
 }
 
-#quick-search-input{
+#quick-search-input {
     outline: none;
     width: 250px;
     height: 40px;
@@ -54,52 +54,51 @@
     background: #1D1D1D url(../assets/icon-search.svg) no-repeat 9px 11px;
 }
 
-.nav-links{
+.nav-links {
     display: inline-block;
-    padding-top: 20px ;
+    padding-top: 20px;
 }
 
-.nav-links li{
+.nav-links li {
     display: inline;
     margin-left: 20px;
 }
 
-.nav-links li a{
+.nav-links li a {
     font-size: 16px;
     font-weight: 500;
     color: #919191;
     transition: color .25s ease-in-out;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: #fff;
 }
-.nav-links li a.active{
+
+.nav-links li a.active {
     color: #6AC045;
 }
 
-.nav-links-guest{
+.nav-links-guest {
     display: none;
 }
-.nav-links-guest a{
+
+.nav-links-guest a {
     color: #fff !important;
 }
 
-.nav-links-guest a:hover{
+.nav-links-guest a:hover {
     color: #919191 !important;
 }
 
 /* ---------------HERO SECTION-------------------------- */
 
-.background-img{
+.background-img {
     position: relative;
     background: url(../assets/background.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    /* height: 100vh; */
-    /* margin-top: -22px; */
-    /* top: 60px; */
     padding: 0;
     left: 0;
     right: 0;
@@ -107,36 +106,36 @@
     display: block;
 }
 
-.hero-overlay{
+.hero-overlay {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(180deg,rgba(29, 29, 29, 0.295) 0,#0f0f0f);
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0.295) 0, #0f0f0f);
 }
 
-.hero-section{
+.hero-section {
     width: 100%;
 }
 
-.hero-section .hero-title{
+.hero-section .hero-title {
     text-align: center;
     color: #fff;
     padding-top: 50px;
 }
 
-.hero-title h1{
+.hero-title h1 {
     font-size: 46px;
     font-weight: 700;
-    text-shadow: 0 2px 2px rgba(0,0,0,.4);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .4);
     margin-bottom: 15px;
     margin-top: 0;
 }
 
-.hero-title p{
+.hero-title p {
     font-size: 15px;
     color: #ccc;
     max-width: 650px;
@@ -147,18 +146,14 @@
 
 /* -------------------MOVIES SECTION------------------------ */
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    /* margin-left: -15px;
-    margin-right: -15px; */
-    
 }
 
-.browse-movie-wrap{
-    /* border: 1px solid white; */
+.browse-movie-wrap {
     position: relative;
     width: 100%;
     flex-basis: 20%;
@@ -167,7 +162,7 @@
     margin-bottom: 15px;
 }
 
-.browse-movie-link{
+.browse-movie-link {
     max-width: 220px;
     border: 5px solid #fff;
     border-radius: 4px;
@@ -178,18 +173,20 @@
     -moz-transition: border .15s ease-in-out;
     -webkit-transition: border .15s ease-in-out;
     cursor: pointer;
-    max-height: 337px;
+    height: 250px;
+    min-height: 350px;
 }
 
-.browse-movie-link img{
+.browse-movie-link img {
     width: 100%;
+    height: 100%;
     display: block;
-    height: auto;
+    object-fit: cover;
 }
 
-        /* ------------------OVERLAY CARD------------------- */
+/* ------------------OVERLAY CARD------------------- */
 
-.browse-movie-link .overlay{
+.browse-movie-link .overlay {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -211,7 +208,7 @@
     cursor: pointer;
 }
 
-.overlay .star-icon img{
+.overlay .star-icon img {
     color: #6AC045;
     width: 24px;
     height: 24px;
@@ -219,7 +216,7 @@
     margin: 0 auto;
 }
 
-.overlay h4{
+.overlay h4 {
     font-size: 25px;
     margin: 0;
     position: relative;
@@ -229,12 +226,12 @@
     line-height: 1.5em;
 }
 
-.overlay .rating{
+.overlay .rating {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.overlay button{
+.overlay button {
     background-color: #5da93c;
     color: #fff;
     margin-top: 40px;
@@ -252,24 +249,25 @@
     cursor: pointer;
 }
 
-.overlay button:hover{
+.overlay button:hover {
     background-color: #50a72b;
 }
 
-.browse-movie-link:hover .overlay{
+.browse-movie-link:hover .overlay {
     opacity: 1;
 }
 
-.browse-movie-link:hover .overlay button{
+.browse-movie-link:hover .overlay button {
     -moz-transform: translateY(-40px);
     -webkit-transform: translateY(-40px);
     transform: translateY(-40px);
 }
 
-.browse-movie-link:hover{
+.browse-movie-link:hover {
     border: 5px solid #6ac045;
 }
-        /* -------OVERLAY CARD END------------- */
+
+/* -------OVERLAY CARD END------------- */
 
 .browse-movie-bottom {
     margin: 0;
@@ -278,7 +276,7 @@
     text-align: left;
 }
 
-.browse-movie-bottom a{
+.browse-movie-bottom a {
     color: #fff;
     letter-spacing: .5px;
     display: block;
@@ -291,20 +289,20 @@
     text-overflow: ellipsis;
     line-height: 1.6em;
 }
-.browse-movie-bottom a:hover{
+
+.browse-movie-bottom a:hover {
     color: #919191;
 }
 
-.popular-section{
+.popular-section {
     margin-top: 80px;
     padding-bottom: 15px;
     border-top: 1px solid #817C7C;
 }
 
-.popular-section h2
-{
+.popular-section h2 {
     color: #fff;
-    padding:8px;
+    padding: 8px;
     text-align: center;
     width: 200px;
     font-size: 18px;
@@ -317,7 +315,7 @@
     margin-bottom: 20px;
 }
 
-.popular-section h2 img{
+.popular-section h2 img {
     position: relative;
     top: 2px;
     height: 18px;
@@ -327,28 +325,27 @@
 
 /* ----------- MAIN SECTION ------------------ */
 
-.main-section{
+.main-section {
     width: 100%;
     background-color: #101010;
     position: relative;
-    /* top: 60px; */
 }
 
 .latest-section {
-    margin:0;
+    margin: 0;
     padding-top: 20px;
 }
 
-.latest-section .content{
+.latest-section .content {
     margin-top: 30px;
     padding-bottom: 30px;
     border-top: 1px solid #817C7C;
 }
 
-.latest-section h2{
+.latest-section h2 {
     color: #fff;
     width: 240px;
-    padding:8px 0;
+    padding: 8px 0;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -359,18 +356,18 @@
     margin-bottom: 20px;
 }
 
-.latest-section .view-all a{
+.latest-section .view-all a {
     color: #6AC045;
     transition: all .3s;
 }
 
-.latest-section .view-all a:hover{
+.latest-section .view-all a:hover {
     color: #fff;
 }
 
 /* --------------------FOOTER------------------- */
 
-footer{
+footer {
     width: 100%;
     background-color: #171717;
     text-align: center;
@@ -380,167 +377,156 @@ footer{
     border-top: 1px solid #2f2f2f;
 }
 
-footer ul{
+footer ul {
     display: inline-block;
     margin: 10px 10px 0;
     padding: 10px;
 }
 
-footer ul li{
+footer ul li {
     display: inline;
     margin-right: 8px;
     color: #fff;
 }
 
-footer ul li a, footer p a{
+footer ul li a, footer p a {
     color: #919191;
     transition: color .25s ease-in-out;
 }
 
-footer ul li a:hover, footer p a:hover{
+footer ul li a:hover, footer p a:hover {
     color: #fff;
 }
 
-footer p{
+footer p {
     margin-top: 8px;
 }
 
-
 /* -------------------------------MEDIA QUERIES---------------------------- */
-@media only screen and (max-width: 1024px){
-    .container{
+
+@media only screen and (max-width: 1024px) {
+    .container {
         max-width: 992px;
     }
-
-    .browse-movie-bottom{
+    .browse-movie-bottom {
         width: 170px;
     }
-
-    .hero-title h1{
+    .browse-movie-link {
+        min-height: 270px;
+    }
+    .hero-title h1 {
         font-size: 36px;
         font-weight: 600;
     }
-    
-    .hero-title p{
+    .hero-title p {
         font-size: 15px;
         max-width: 700px;
     }
-
-    .browse-movie-link .overlay{
+    .browse-movie-link .overlay {
         padding-top: 30px;
         display: none;
     }
-
-    .overlay h4{
+    .overlay h4 {
         font-size: 20px;
     }
 }
 
-@media only screen and (max-width: 768px){
-    .container{
+@media only screen and (max-width: 768px) {
+    .container {
         max-width: 720px;
     }
-    .browse-movie-wrap{
+    .browse-movie-wrap {
         flex-basis: 20%;
         margin-top: 15px;
     }
-    .browse-movie-bottom{
-        width:150px;
+    .browse-movie-link {
+        min-height: 250px;
     }
-    .browse-movie-bottom a,.browse-movie-bottom div{
+    .browse-movie-bottom {
+        width: 150px;
+    }
+    .browse-movie-bottom a, .browse-movie-bottom div {
         font-size: 14px;
     }
-
     .browse-movies-section .pagination li {
         padding: 10px 0px;
     }
-
-    .browse-movies-section .movies-list{
+    .browse-movies-section .movies-list {
         margin-top: 10px;
     }
 }
 
-@media only screen and (max-width: 650px){
-    .container{
+@media only screen and (max-width: 650px) {
+    .container {
         max-width: 540px;
     }
-
-    .nav-logo a img{
+    .nav-logo a img {
         margin-right: 0;
     }
-    .hero-title h1{
+    .hero-title h1 {
         font-size: 28px;
         font-weight: 600;
         text-align: left;
         line-height: 1.1em;
     }
-    
-    .hero-title p{
+    .hero-title p {
         font-size: 14px;
         max-width: 400px;
         line-height: 1.5em;
         text-align: left;
     }
-    .hero-title{
+    .hero-title {
         margin-left: 20px;
         margin-right: 10px;
     }
-
-    .browse-movie-wrap{
+    .browse-movie-wrap {
         flex-basis: 45%;
         padding: 0;
     }
-
-    .popular-section{
+    .popular-section {
         margin-top: 60px;
     }
-
-    .popular-section h2
-{
-    width: 180px;
-    font-size: 16px;
-    margin-bottom: 0px;
+    .popular-section h2 {
+        width: 180px;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .popular-section h2 img {
+        height: 16px;
+        width: 16px;
+        margin-right: 8px;
+    }
+    .browse-movie-wrap {
+        margin-top: 15px;
+    }
+    .browse-movie-link{
+        min-height: 300px;
+    }
+    .latest-section {
+        padding-top: 15px;
+    }
+    .latest-section h2 {
+        font-size: 16px;
+        width: 220px;
+        margin-bottom: -10px;
+    }
+    .browse-movies-section .pagination {
+        display: none;
+    }
+    .browse-movies-section .hidden-pagination {
+        display: flex;
+    }
 }
 
-.popular-section h2 img{
-    height: 16px;
-    width: 16px;
-    margin-right: 8px;
-}
-.browse-movie-wrap{
-    margin-top: 15px;
-}
-
-.latest-section{
-    padding-top: 15px;
-}
-
-.latest-section h2{
-    font-size: 16px;
-    width: 220px;
-    margin-bottom: -10px;
-}
-
- .browse-movies-section .pagination{
-    display: none;
-}
- .browse-movies-section .hidden-pagination{
-    display: flex;
-}
-
-}
-
-@media only screen and (max-width: 420px){
-
-    .browse-movies-section .main-search{
+@media only screen and (max-width: 420px) {
+    .browse-movies-section .main-search {
         height: 150px;
     }
-    .browse-movies-section .search-form{
+    .browse-movies-section .search-form {
         padding: 0;
         margin-top: 0;
     }
-
-    .search-form .search-field{
+    .search-form .search-field {
         width: 90%;
         display: block;
     }
@@ -548,33 +534,26 @@ footer p{
         margin-left: auto;
         margin-right: auto;
     }
-    .search-field p{
+    .search-field p {
         font-size: 22px !important;
     }
-
-    .search-field input{
+    .search-field input {
         height: 40px !important;
     }
-
-    .search-form .search-btn{
+    .search-form .search-btn {
         margin: 0 auto;
         margin-left: 20px !important;
     }
-    .search-btn input{
+    .search-btn input {
         padding: 10px 15px !important;
     }
-
 }
 
-@media only screen and (max-width: 330px){
-    .browse-movie-wrap{
+@media only screen and (max-width: 330px) {
+    .browse-movie-wrap {
         flex-basis: 70%;
     }
-
-    .browse-movie-bottom{
+    .browse-movie-bottom {
         width: 220px;
     }
 }
-
-
-

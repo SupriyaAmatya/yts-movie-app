@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import star from '../../assets/star-icon green.svg'
 import Pagination from './Pagination'
+import star from '../../assets/star-icon green.svg'
 
 const MoviesCollection = (props) => {
   const { allMovies, pages, nextPage, currentPage, totalMovies, window, limit } = props
-  // console.log(allMovies);
+
   const moviesList = allMovies ? (
     allMovies.map(movie => {
       return (
         <div className="browse-movie-wrap" key={movie.id}>
           <div className="browse-movie-link">
-            <a href={'/movie/' + movie.id + '/' + movie.slug}>
+            <Link to={'/movie/' + movie.id + '/' + movie.slug}>
               <img src={movie.medium_cover_image === null ? ('https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg') : (movie.medium_cover_image)} alt={movie.title}></img>
               <div className="overlay">
                 <div className="star-icon">
@@ -22,10 +23,10 @@ const MoviesCollection = (props) => {
                 <h4>{movie.genres ? (movie.genres[1]) : null}</h4>
                 <button>View Details</button>
               </div>
-            </a>
+            </Link>
           </div>
           <div className="browse-movie-bottom">
-            <a href={'/movie/' + movie.id + '/' + movie.slug}>{movie.title}</a>
+            <Link to={'/movie/' + movie.id + '/' + movie.slug}>{movie.title}</Link>
             <div className='movie-year'>{movie.year}</div>
           </div>
         </div>
@@ -50,9 +51,9 @@ const MoviesCollection = (props) => {
         </div>
 
         {totalMovies > limit ? <Pagination pages={pages} nextPage={nextPage} currentPage={currentPage} window={window} /> : ''}
-        
+
       </div>
-      
+
     </div>
   )
 }

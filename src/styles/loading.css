@@ -1,4 +1,4 @@
-.loading-screen{
+.loading-screen {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -13,26 +13,26 @@
     justify-content: center;
 }
 
-.box{
+.box {
     width: 150px;
     text-align: center;
 }
 
-.box .spinner{
+.box .spinner {
     width: 64px;
     height: 64px;
     margin: 0 auto;
     background: url(../assets/25.svg) no-repeat center center;
 }
 
-.box p{
+.box p {
     margin-left: 30px;
     margin-top: 8px;
-    font-weight:600;
+    font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
     background: -webkit-linear-gradient(#eee, #73d14a);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

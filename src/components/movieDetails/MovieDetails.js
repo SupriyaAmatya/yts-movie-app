@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import bg from '../../assets/background.jpg'
 import '../../styles/movieDetail.css';
 
 import MovieInfo from './MovieInfo';
@@ -30,6 +29,8 @@ class MovieDetails extends Component {
   }
 
   componentDidMount() {
+    
+    window.scrollTo(0, 0)
     let id = this.props.match.params.id;
 
     const movieDetails = axios.get('https://yts.mx/api/v2/movie_details.json?movie_id=' + id + '&with_images=true&with_cast=true');
@@ -47,16 +48,8 @@ class MovieDetails extends Component {
 
   render() {
     const movie = this.state.movieDetails;
-    console.log(movie);
+    // console.log(movie);
     const bg = movie.background_image;
-
-    const genresList = movie.genres ? (
-      movie.genres.map((genre, index) => {
-        return (
-          <li key={index}>{genre} <span> / </span> </li>
-        )
-      })
-    ) : null
 
     if (movie) {
       return (
@@ -116,4 +109,4 @@ class MovieDetails extends Component {
   }
 }
 
-export default MovieDetails;
+export default MovieDetails

@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const DownloadModal = (props) => {
   const { downloadModal, closeDownloadModal, torrents } = props
   const torrentList = torrents ? (
@@ -16,6 +15,7 @@ const DownloadModal = (props) => {
       )
     })
   ) : null
+
   return (
     <div className={downloadModal ? 'download-modal modal-active' : 'download-modal'} onClick={() => closeDownloadModal()}>
       <div className="modal-container">
@@ -29,8 +29,6 @@ const DownloadModal = (props) => {
       </div>
     </div>
   )
-
 }
-
 
 export default DownloadModal
